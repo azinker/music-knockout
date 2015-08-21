@@ -53,7 +53,7 @@ router.post('/register', function (req, res) {
        if (err) {
          return next(err);
        }
-       res.redirect('/');
+       res.redirect('/users/' + req.user.id);
      });
    });
  });

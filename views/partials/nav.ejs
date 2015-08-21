@@ -6,28 +6,28 @@
 
     <% if (login) { %>
     <li><a href="trophies.html">Your Trophies</a></li>
-      <li><a href="profile.html">Profile</a></li>
+      <li><a href="/users/<%= user._id %>">Profile</a></li>
       <li><a href="/logout">Logout</a></li>
       <% } else { %>
       <li><a href="trophies.html">Trophies</a></li>
-      <li><a href="login">Login</a></li>
-      <li><a href="register">Sign Up</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Sign Up</a></li>
       <% } %>
 
   </ul>
   <ul class="side-nav" id="mobile-demo">
-    <li><a href="register">Sign Up</a></li>
-    <li><a href="badges.html">Profile</a></li>
+    <li><a href="/register">Sign Up</a></li>
+    <li><a href="/users/<%= user._id %>">Profile</a></li>
 
 
     <% if (login) { %>
     <li><a href="collapsible.html">Your Trophies</a></li>
-    <li><a href="profile.html">Profile</a></li>
+    <li><a href="/users/<%= user._id %>">Profile</a></li>
     <li><a href="/logout">Logout</a></li>
     <% } else { %>
     <li><a href="collapsible.html">Trophies</a></li>
-    <li><a href="login">Login</a></li>
-    <li><a href="register">Sign Up</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/register">Sign Up</a></li>
     <% } %>
 
 
